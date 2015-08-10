@@ -51,13 +51,13 @@
   <article data-timings="">
     <p>Any loan that is not paid back by the lender is a significant source of worries to the company.</p>
 
-<p>But upon making the loan application, we are already collecting substantial number of information that is usually evaluated by the loan officer, but people can sometimes be biased or overlook statistically significant information.</p>
+<p>But upon making the loan application, we are already collecting substantial number of information that is usually evaluated by the loan officer, who decides whether to give out the loan, but the officer can sometimes be biased or overlook statistically significant information.</p>
 
-<p>Hence we can investigate whether the loans we have done in the past and their actual outcome (observed) to make smarter loans in the future.</p>
+<p>Hence we can investigate whether the loans we had done in the past and their actual outcome (observed) to make smarter loans in the future.</p>
 
 <h1>This is a well studied problem.</h1>
 
-<p>But it is also vital, we estimate that the savings could be around $350,000--based on the average loan size for the &quot;uncreditworthy&quot; loans and the performance of our model at a set threshold (to be explained later).</p>
+<p>But it is also vital, as we estimate that our savings could be around $350,000 per cycle if we integrate the model into our decision making--based on the average loan size for the &quot;uncreditworthy&quot; loans and the performance of our model at a set threshold (to be explained later).</p>
 
   </article>
   <!-- Presenter Notes -->
@@ -68,7 +68,7 @@
     <h2>Business proposition</h2>
   </hgroup>
   <article data-timings="">
-    <p>If we can succesfully identify bad loans and not give them out, then we can substantially <em>decrease</em> the interest good borrowers are paying and <em>increase</em> profits. Just by <em>identifying the right borrowers based on data we already collect</em>.</p>
+    <p>If we can succesfully identify bad loans and not give them out, then we can substantially <em>decrease</em> the interest good borrowers are paying and <em>increase</em> profits--just by <em>identifying the right borrowers based on data we already collect</em>.</p>
 
 <p>Challenges:</p>
 
@@ -89,14 +89,14 @@
     <h2>The solution</h2>
   </hgroup>
   <article data-timings="">
-    <p>The answer to the last question is yes: this problem calls for a logistic regression, which has coefficients that can be interpreted by a skilled analyst as odds ratios. (However, explaining that in depth is beyond the scope of this presentation, but it can be easily done.)</p>
+    <p>The answer to the last question is yes: this problem calls for a logistic regression, which has coefficients that can be interpreted by a skilled loan analyst as odds ratios. (However, explaining that in depth is beyond the scope of this presentation, but it can be easily done.)</p>
 
 <p>Logistic regression is usually represented as follows:
 \[
-\LARGE F(X) = \frac{e^{-\beta * X}}{1+e^{-\beta * X}}
+\large F(X) = \frac{e^{-\beta * X}}{1+e^{-\beta * X}}
 \]</p>
 
-<p>Where \({\LARGE \beta}\) are fitted parameters and \({\LARGE X}\) is the matrix with the data. The fitted parameters relate to specific variables. So it is possible to train the loan officer to gain--at least inituitive--understanding of the process.</p>
+<p>Where \({\large \beta}\) are fitted parameters and \({\large X}\) is the matrix with the data. The fitted parameters relate to specific variables. So it is possible to train the loan officer to gain--at least inituitive--understanding of the process.</p>
 
 <p>For instance, the officer should be to understand that we are rejecting/accepting this applicant, because this combination of credit history, state and income are very un/likely to pay the loan back. </p>
 
@@ -272,7 +272,7 @@
     <h2>Wrap-up and business implications</h2>
   </hgroup>
   <article data-timings="">
-    <p>Our model performs well, but it all depends on threshold, as already there is considerable degree of pre-screening and most loans ended up being quite good.</p>
+    <p>Our model performs well, but it all depends on the threshold set, as already there is considerable degree of pre-screening and most loans ended up being quite good.</p>
 
 <p>Our model can deliver additional value, but needs to be evaluated as a finacial venture, especially with regards to the marginal improvement that can be gained by setting the threshold at a certain level.</p>
 
@@ -288,7 +288,7 @@
 
 <slide class="" id="slide-13" style="background:;">
   <hgroup>
-    <h2>Questions?</h2>
+    <h2>Discussion</h2>
   </hgroup>
   <article data-timings="">
     
@@ -374,7 +374,7 @@
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=13 title='Questions?'>
+        data-slide=13 title='Discussion'>
          13
       </a>
     </li>

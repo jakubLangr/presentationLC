@@ -18,20 +18,20 @@ github:
 
 Any loan that is not paid back by the lender is a significant source of worries to the company.
 
-But upon making the loan application, we are already collecting substantial number of information that is usually evaluated by the loan officer, but people can sometimes be biased or overlook statistically significant information.
+But upon making the loan application, we are already collecting substantial number of information that is usually evaluated by the loan officer, who decides whether to give out the loan, but the officer can sometimes be biased or overlook statistically significant information.
 
-Hence we can investigate whether the loans we have done in the past and their actual outcome (observed) to make smarter loans in the future.
+Hence we can investigate whether the loans we had done in the past and their actual outcome (observed) to make smarter loans in the future.
 
 # This is a well studied problem. 
 
-But it is also vital, we estimate that the savings could be around $350,000--based on the average loan size for the "uncreditworthy" loans and the performance of our model at a set threshold (to be explained later).
+But it is also vital, as we estimate that our savings could be around $350,000 per cycle if we integrate the model into our decision making--based on the average loan size for the "uncreditworthy" loans and the performance of our model at a set threshold (to be explained later).
 
 
 --- .class #id 
 
 ## Business proposition
 
-If we can succesfully identify bad loans and not give them out, then we can substantially _decrease_ the interest good borrowers are paying and _increase_ profits. Just by _identifying the right borrowers based on data we already collect_.
+If we can succesfully identify bad loans and not give them out, then we can substantially _decrease_ the interest good borrowers are paying and _increase_ profits--just by _identifying the right borrowers based on data we already collect_.
 
 Challenges:
 * How accurate can the model be?
@@ -44,14 +44,14 @@ Challenges:
 
 ## The solution
 
-The answer to the last question is yes: this problem calls for a logistic regression, which has coefficients that can be interpreted by a skilled analyst as odds ratios. (However, explaining that in depth is beyond the scope of this presentation, but it can be easily done.)
+The answer to the last question is yes: this problem calls for a logistic regression, which has coefficients that can be interpreted by a skilled loan analyst as odds ratios. (However, explaining that in depth is beyond the scope of this presentation, but it can be easily done.)
 
 Logistic regression is usually represented as follows:
 $$
-\LARGE F(X) = \frac{e^{-\beta * X}}{1+e^{-\beta * X}}
+\large F(X) = \frac{e^{-\beta * X}}{1+e^{-\beta * X}}
 $$
 
-Where ${\LARGE \beta}$ are fitted parameters and ${\LARGE X}$ is the matrix with the data. The fitted parameters relate to specific variables. So it is possible to train the loan officer to gain--at least inituitive--understanding of the process.
+Where ${\large \beta}$ are fitted parameters and ${\large X}$ is the matrix with the data. The fitted parameters relate to specific variables. So it is possible to train the loan officer to gain--at least inituitive--understanding of the process.
 
 For instance, the officer should be to understand that we are rejecting/accepting this applicant, because this combination of credit history, state and income are very un/likely to pay the loan back. 
 
@@ -178,7 +178,7 @@ Overall, our model with the threshold set at 0.5 (basically our model prediction
 ## Wrap-up and business implications
 
 
-Our model performs well, but it all depends on threshold, as already there is considerable degree of pre-screening and most loans ended up being quite good.
+Our model performs well, but it all depends on the threshold set, as already there is considerable degree of pre-screening and most loans ended up being quite good.
 
 Our model can deliver additional value, but needs to be evaluated as a finacial venture, especially with regards to the marginal improvement that can be gained by setting the threshold at a certain level.
 
@@ -190,4 +190,4 @@ But ultimately, a field test is the only certain way to ensure that this is a no
 
 ---
 
-## Questions?
+## Discussion
