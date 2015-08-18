@@ -68,9 +68,9 @@ So we took the logistic regression and applied it to the data. Couple of things 
 
 # Hence we are confident that our results will generalise well.
 
+<br>
 
-
-If desired, for a more detailed exposition of the data plaese follow <a href="https://www.dropbox.com/s/w1kgegtvcpqp5t9/Programing_Project.pdf?dl=0"> this link</a>.
+If desired, for a more detailed exposition of the data please follow <a href="https://www.dropbox.com/s/w1kgegtvcpqp5t9/Programing_Project.pdf?dl=0"> this link</a>.
 
 ---
 
@@ -129,7 +129,7 @@ Prediction       Creditworthy Uncreditworthy
 
 ## Gini coefficient 
 
-The following two metrics do not rely on the threshold (which you can specify in any way suits your business), but rather give an idea of overall model quality, though this is still highly domain dependent.
+<div style="text-size: 24px"> The following two metrics do not rely on the threshold (which you can specify in any way suits your business), but rather give an idea of overall model quality, though this is still highly domain dependent. </div>
 
 # What does it mean?
 Technically "represents a multiplicative increase in the positive class's rate (due to a given predictive model) over a random guess", which I find highly confusing, but this measure is commonly used in economics so might give you an intuitive understanding of model performance.
